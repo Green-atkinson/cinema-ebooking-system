@@ -1,6 +1,6 @@
 import React from "react";
 import Image from "next/image";
-import MovieList from "../components/MovieList"; // Assuming you have a component to list movies
+import MovieList from "../components/MovieList"; 
 
 export default function Home() {
   return (
