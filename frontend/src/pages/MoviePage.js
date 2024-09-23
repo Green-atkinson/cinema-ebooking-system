@@ -1,41 +1,39 @@
-import React from 'react';
+import React from "react";
+import Image from "next/image";
 
-const MoviePage = () => {
-  // Sample movie data, in a real scenario, this would be fetched from an API
+export default function MoviePage() {
   const movie = {
-    title: "Inception",
-    description: "A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O.",
-    releaseDate: "2010-07-16",
-    trailerUrl: "https://www.youtube.com/embed/YoHD9XEInc0", // Embed a YouTube trailer link
+    title: "Spider-Man: No Way Home",
+    description: "Peter Parker's life is turned upside down when his identity as Spider-Man is revealed.",
+    releaseDate: "2021-12-17",
+    trailerUrl: "https://www.youtube.com/embed/JfVOs4VSpmA", // Spider-Man: No Way Home Trailer
   };
 
   return (
-    <div>
-      <h1>{movie.title}</h1>
-      <p>{movie.description}</p>
-      <p><strong>Release Date:</strong> {movie.releaseDate}</p>
-      
-      {/* Embedded YouTube Trailer */}
-      <div>
+    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8">
+      <main className="flex flex-col gap-8 row-start-2 items-center">
+        <h1 className="text-4xl font-bold">{movie.title}</h1>
+        <p className="text-lg">{movie.description}</p>
+        <p className="text-md font-semibold">
+          <strong>Release Date:</strong> {movie.releaseDate}
+        </p>
+
+        {/* Embedded Trailer */}
         <iframe
           width="560"
           height="315"
           src={movie.trailerUrl}
           title="Movie Trailer"
           frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
           allowFullScreen
         ></iframe>
-      </div>
+        <br/>
 
-      <br />
-      
-      {/* Button to book the movie */}
-      <button onClick={() => alert("Redirect to booking page")}>
-        Book Tickets
-      </button>
+        {/* Book Tickets Button */}
+        <button className="p-2 bg-blue-500 text-white mt-4 hover:bg-blue-700">
+          Book Tickets
+        </button>
+      </main>
     </div>
   );
-};
-
-export default MoviePage;
+}

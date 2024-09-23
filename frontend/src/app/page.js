@@ -1,4 +1,6 @@
+import React from "react";
 import Image from "next/image";
+import MovieList from "../components/MovieList"; // Assuming you have a component to list movies
 
 export default function Home() {
   return (
@@ -12,6 +14,11 @@ export default function Home() {
           height={38}
           priority
         />
+        <h1>Welcome to the Cinema E-Booking System</h1>
+
+        {/* MovieList component to render the movie list */}
+        <MovieList />
+
         <ol className="list-inside list-decimal text-sm text-center sm:text-left font-[family-name:var(--font-geist-mono)]">
           <li className="mb-2">
             Get started by editing{" "}
@@ -49,6 +56,7 @@ export default function Home() {
           </a>
         </div>
       </main>
+
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center">
         <a
           className="flex items-center gap-2 hover:underline hover:underline-offset-4"
