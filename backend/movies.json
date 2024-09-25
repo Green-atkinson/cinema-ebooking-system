@@ -1,0 +1,130 @@
+[
+    {
+        "title": "The Midnight Sky",
+        "description": "A lone scientist in the Arctic races to contact a crew of astronauts returning home to a mysterious global catastrophe.",
+        "releaseDate": "2020-12-11T00:00:00Z",
+        "genre": "Science Fiction",
+        "trailerLink": "https://www.youtube.com/watch?v=DXUUqr3AFKs",
+        "status": "Currently Running"
+    },
+    {
+        "title": "Tenet",
+        "description": "Armed with only one word, Tenet, and fighting for the survival of the world, a protagonist journeys through a twilight world of international espionage on a mission that will unfold in something beyond real time.",
+        "releaseDate": "2020-09-03T00:00:00Z",
+        "genre": "Action, Science Fiction",
+        "trailerLink": "https://www.youtube.com/watch?v=L3pk_TBkihU",
+        "status": "Currently Running"
+    },
+    {
+        "title": "Dune",
+        "description": "Feature adaptation of Frank Herbert's science fiction novel about the son of a noble family entrusted with the protection of the most valuable asset and most vital element in the galaxy.",
+        "releaseDate": "2021-10-22T00:00:00Z",
+        "genre": "Adventure, Drama",
+        "trailerLink": "https://www.youtube.com/watch?v=n9xhJrPXop4",
+        "status": "Coming Soon"
+    },
+    {
+        "title": "No Time to Die",
+        "description": "James Bond has left active service. His peace is short-lived when Felix Leiter, an old friend from the CIA, turns up asking for help, leading Bond onto the trail of a mysterious villain armed with dangerous new technology.",
+        "releaseDate": "2021-09-30T00:00:00Z",
+        "genre": "Action, Adventure",
+        "trailerLink": "https://www.youtube.com/watch?v=BIhNsAtPbPI",
+        "status": "Coming Soon"
+    },
+    {
+        "title": "Avengers: Endgame",
+        "description": "After the devastating events of Avengers: Infinity War, the universe is in ruins. The Avengers assemble once more to reverse Thanos' actions and restore balance to the universe.",
+        "releaseDate": "2019-04-26T00:00:00Z",
+        "genre": "Action, Adventure",
+        "trailerLink": "https://www.youtube.com/watch?v=TcMBFSGVi1c",
+        "status": "Currently Running"
+    },
+    {
+        "title": "Joker",
+        "description": "In Gotham City, mentally troubled comedian Arthur Fleck embarks on a downward spiral of social revolution and bloody crime. This path brings him face-to-face with his infamous alter-ego: The Joker.",
+        "releaseDate": "2019-10-04T00:00:00Z",
+        "genre": "Crime, Drama, Thriller",
+        "trailerLink": "https://www.youtube.com/watch?v=zAGVQLHvwOY",
+        "status": "Currently Running"
+    },
+    {
+        "title": "Black Panther",
+        "description": "T'Challa, the King of Wakanda, rises to the throne in the isolated, technologically advanced African nation, but his claim is challenged by a vengeful outsider.",
+        "releaseDate": "2018-02-16T00:00:00Z",
+        "genre": "Action, Adventure, Science Fiction",
+        "trailerLink": "https://www.youtube.com/watch?v=xjDjIWPwcPU",
+        "status": "Currently Running"
+    },
+    {
+        "title": "The Batman",
+        "description": "In his second year of fighting crime, Batman uncovers corruption in Gotham City that connects to his own family while facing a serial killer known as the Riddler.",
+        "releaseDate": "2022-03-04T00:00:00Z",
+        "genre": "Action, Crime, Drama",
+        "trailerLink": "https://www.youtube.com/watch?v=mqqft2x_Aa4",
+        "status": "Coming Soon"
+    },
+    {
+        "title": "Doctor Strange in the Multiverse of Madness",
+        "description": "Doctor Strange, with the help of mystical allies both old and new, traverses the mind-bending and dangerous alternate realities of the multiverse to confront a mysterious new adversary.",
+        "releaseDate": "2022-05-06T00:00:00Z",
+        "genre": "Action, Adventure, Fantasy",
+        "trailerLink": "https://www.youtube.com/watch?v=aWzlQ2N6qqg",
+        "status": "Coming Soon"
+    },
+    {
+        "title": "Shang-Chi and the Legend of the Ten Rings",
+        "description": "Shang-Chi must confront the past he thought he left behind when he is drawn into the web of the mysterious Ten Rings organization.",
+        "releaseDate": "2021-09-03T00:00:00Z",
+        "genre": "Action, Adventure, Fantasy",
+        "trailerLink": "https://www.youtube.com/watch?v=8YjFbMbfXaQ",
+        "status": "Currently Running"
+    },
+    {
+        "title": "Eternals",
+        "description": "The saga of the Eternals, a race of immortal beings who lived on Earth and shaped its history and civilizations.",
+        "releaseDate": "2021-11-05T00:00:00Z",
+        "genre": "Action, Adventure, Drama",
+        "trailerLink": "https://www.youtube.com/watch?v=x_me3xsvDgk",
+        "status": "Currently Running"
+    },
+    {
+        "title": "Spider-Man: No Way Home",
+        "description": "With Spider-Man's identity now revealed, Peter asks Doctor Strange for help. When a spell goes wrong, dangerous foes from other worlds start to appear.",
+        "releaseDate": "2021-12-17T00:00:00Z",
+        "genre": "Action, Adventure, Fantasy",
+        "trailerLink": "https://www.youtube.com/watch?v=JfVOs4VSpmA",
+        "status": "Currently Running"
+    },
+    {
+        "title": "Top Gun: Maverick",
+        "description": "After more than thirty years of service as one of the Navy's top aviators, Pete 'Maverick' Mitchell is where he belongs, pushing the envelope as a courageous test pilot.",
+        "releaseDate": "2022-05-27T00:00:00Z",
+        "genre": "Action, Drama",
+        "trailerLink": "https://www.youtube.com/watch?v=qSqVVswa420",
+        "status": "Coming Soon"
+    },
+    {
+        "title": "Mission: Impossible - Fallout",
+        "description": "Ethan Hunt and his IMF team, along with some familiar allies, race against time after a mission gone wrong.",
+        "releaseDate": "2018-07-27T00:00:00Z",
+        "genre": "Action, Adventure, Thriller",
+        "trailerLink": "https://www.youtube.com/watch?v=wb49-oV0F78",
+        "status": "Currently Running"
+    },
+    {
+        "title": "The Matrix Resurrections",
+        "description": "Return to a world of two realities: one, everyday life; the other, what lies behind it. To truly know himself, Mr. Anderson will have to choose to follow the white rabbit once more.",
+        "releaseDate": "2021-12-22T00:00:00Z",
+        "genre": "Action, Science Fiction",
+        "trailerLink": "https://www.youtube.com/watch?v=9ix7TUGVYIo",
+        "status": "Currently Running"
+    },
+    {
+        "title": "Thor: Love and Thunder",
+        "description": "Thor enlists the help of Valkyrie, Korg, and ex-girlfriend Jane Foster to fight Gorr the God Butcher, who intends to make the gods extinct.",
+        "releaseDate": "2022-07-08T00:00:00Z",
+        "genre": "Action, Adventure, Fantasy",
+        "trailerLink": "https://www.youtube.com/watch?v=Go8nTmfrQd8",
+        "status": "Coming Soon"
+    }
+]
