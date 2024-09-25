@@ -11,9 +11,21 @@ exports.addMovie = async (req, res) => {
 
 // Get all movies
 exports.getAllMovies = async (req, res) => {
-    const movies = await Movie.find();
-    res.json(movies);
+    const {title, genre } = req.query
+    const queryObject = {}
+
+    if(title){
+        queryObject.title = { $regex: title, $options: 'i'}
+    }
+
+    if (genre) {
+        queryObject.genre = { $regex: genre, $options: 'i'}
+    }
+    console.log(queryObject)
+    const movies = await Movie.find(queryObject);
+    res.status(StatusCodes.OK).json({ movies, count: movies.length });
 };
+
 
 // Get a single movie
 exports.getSingleMovie = async (req, res) => {
@@ -27,12 +39,5 @@ exports.getSingleMovie = async (req, res) => {
 exports.getMoviesByStatus = async (req, res) => {
     const { status } = req.params;
     const movies = await Movie.find({ status });
-    res.json(movies);
-};
-
-// Search for a movie by title
-exports.searchMovieByTitle = async (req, res) => {
-    const { title } = req.query;
-    const movies = await Movie.find({ title: { $regex: title, $options: 'i' } });
     res.json(movies);
 };
