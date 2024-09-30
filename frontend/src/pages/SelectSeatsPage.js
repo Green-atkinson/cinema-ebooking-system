@@ -1,4 +1,5 @@
 import React from "react";
+import '../styles/SelectSeatsPage.css';
 
 export default function SelectSeatsPage() {
   const seats = [
@@ -7,20 +8,25 @@ export default function SelectSeatsPage() {
     { seatNumber: "A3", isAvailable: true },
   ];
 
+  const handleGoBack = () => {
+    window.history.back(); // Navigate to the previous page
+  };
+
   return (
-    <div className="min-h-screen p-8">
-      <h2 className="text-2xl font-bold mb-4">Select Your Seats</h2>
-      <div className="flex flex-wrap gap-4">
+    <div className="select-seats-container">
+      <h2 className="select-seats-title">Select Your Seats</h2>
+      <div className="seats-grid">
         {seats.map((seat, index) => (
           <button
             key={index}
             disabled={!seat.isAvailable}
-            className={`p-2 ${seat.isAvailable ? 'bg-green-500' : 'bg-gray-500'} text-white`}
+            className={`seat-button ${seat.isAvailable ? 'available' : 'unavailable'}`}
           >
             {seat.seatNumber}
           </button>
         ))}
       </div>
+      <button className="go-back-button" onClick={handleGoBack}>Go Back</button>
     </div>
   );
 }

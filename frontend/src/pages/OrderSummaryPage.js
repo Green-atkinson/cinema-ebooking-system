@@ -1,6 +1,6 @@
 import React from "react";
+import "../styles/OrderSummaryPage.css";
 
-// Placeholder movie and ticket data for order summary (can be replaced with actual data from API)
 const order = {
   tickets: [
     {
@@ -26,23 +26,30 @@ const order = {
 };
 
 export default function OrderSummaryPage() {
+  const handleGoBack = () => {
+    window.history.back(); // This will take the user back to the previous page
+  };
+
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8">
-      <main className="flex flex-col gap-8 row-start-2 items-center">
-        <h2 className="text-2xl font-bold">Order Summary</h2>
-        <ul className="list-disc">
+    <div className="order-summary-container">
+      <main className="order-summary-content">
+        <h2>Order Summary</h2>
+        <ul>
           {order.tickets.map((ticket, index) => (
-            <li key={index} className="mb-4">
+            <li key={index} className="ticket-item">
               <strong>{ticket.movie.title}</strong> - Seat: {ticket.seat}, Price: ${ticket.price} <br />
               <em>{ticket.movie.description}</em> <br />
               <strong>Release Date:</strong> {ticket.movie.releaseDate}
             </li>
           ))}
         </ul>
-        <p className="text-xl font-semibold">
+        <p className="total-price">
           <strong>Total Price:</strong> ${order.totalPrice}
         </p>
-        <button className="p-2 bg-blue-500 text-white mt-4">Confirm & Continue Checkout</button>
+        <div className="button-group">
+          <button className="confirm-button">Confirm & Continue Checkout</button>
+          <button onClick={handleGoBack} className="go-back-button">Go Back</button>
+        </div>
       </main>
     </div>
   );

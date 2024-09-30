@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/SelectMoviePage.css';
 
 const SelectMoviePage = () => {
   const movies = [
@@ -6,17 +7,22 @@ const SelectMoviePage = () => {
     { id: 2, title: "Avatar: The Way of Water", releaseDate: "2022-12-16" },
   ];
 
+  const handleGoBack = () => {
+    window.history.back(); // Navigate to the previous page
+  };
+
   return (
-    <div className="min-h-screen p-8">
-      <h2 className="text-2xl font-bold mb-4">Select a Movie</h2>
-      <ul>
+    <div className="select-movie-container">
+      <h2 className="select-movie-title">Select a Movie</h2>
+      <ul className="movie-list">
         {movies.map(movie => (
-          <li key={movie.id} className="mb-4">
+          <li key={movie.id} className="movie-item">
             <strong>{movie.title}</strong> - Release Date: {movie.releaseDate} <br />
-            <button className="p-2 bg-blue-500 text-white mt-2">Select</button>
+            <button className="select-button">Select</button>
           </li>
         ))}
       </ul>
+      <button className="go-back-button" onClick={handleGoBack}>Go Back</button>
     </div>
   );
 };

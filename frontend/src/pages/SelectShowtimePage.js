@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/SelectShowtimePage.css';
 
 const SelectShowtimePage = () => {
   const showtimes = [
@@ -7,20 +8,25 @@ const SelectShowtimePage = () => {
     { time: "6:00 PM", isAvailable: false },
   ];
 
+  const handleGoBack = () => {
+    window.history.back(); // Navigate to the previous page
+  };
+
   return (
-    <div className="min-h-screen p-8">
-      <h2 className="text-2xl font-bold mb-4">Select Showtime</h2>
-      <div className="flex flex-wrap gap-4">
+    <div className="select-showtime-container">
+      <h2 className="select-showtime-title">Select Showtime</h2>
+      <div className="showtime-grid">
         {showtimes.map((showtime, index) => (
           <button
             key={index}
             disabled={!showtime.isAvailable}
-            className={`p-2 ${showtime.isAvailable ? 'bg-blue-500' : 'bg-gray-500'} text-white`}
+            className={`showtime-button ${showtime.isAvailable ? 'available' : 'unavailable'}`}
           >
             {showtime.time}
           </button>
         ))}
       </div>
+      <button className="go-back-button" onClick={handleGoBack}>Go Back</button>
     </div>
   );
 };

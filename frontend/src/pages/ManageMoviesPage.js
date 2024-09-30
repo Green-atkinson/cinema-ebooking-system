@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import '../styles/ManageMoviesPage.css';
 
 const ManageMoviesPage = () => {
   const [movies, setMovies] = useState([
@@ -19,15 +20,15 @@ const ManageMoviesPage = () => {
   };
 
   return (
-    <div className="min-h-screen p-8">
-      <h2 className="text-2xl font-bold mb-4">Manage Movies</h2>
-      <button onClick={handleAddMovie} className="p-2 bg-green-500 text-white mb-4">Add New Movie</button>
-      <ul>
+    <div className="manage-movies-container">
+      <h2>Manage Movies</h2>
+      <button onClick={handleAddMovie} className="add-button">Add New Movie</button>
+      <ul className="movie-list">
         {movies.map(movie => (
-          <li key={movie.id} className="mb-4">
+          <li key={movie.id} className="movie-item">
             <strong>{movie.title}</strong> - Release Date: {movie.releaseDate} <br />
-            <button onClick={() => handleEditMovie(movie.id)} className="p-2 bg-yellow-500 text-white mr-2">Edit</button>
-            <button onClick={() => handleDeleteMovie(movie.id)} className="p-2 bg-red-500 text-white">Delete</button>
+            <button onClick={() => handleEditMovie(movie.id)} className="edit-button">Edit</button>
+            <button onClick={() => handleDeleteMovie(movie.id)} className="delete-button">Delete</button>
           </li>
         ))}
       </ul>
